@@ -1,5 +1,5 @@
 #description: This is a description
-#execution mode: This is the execution mode
+#execution mode: Individual
 #tags: firstTag, secondTag
 
 Write-Host "Closing Teams in order to clear cache"
