@@ -1,3 +1,7 @@
+#description: This is a description
+#execution mode: This is the execution mode
+#tags: firstTag, secondTag
+
 Write-Host "Closing Teams in order to clear cache"
 try{
 Get-Process -ProcessName Teams | Stop-Process -Force
