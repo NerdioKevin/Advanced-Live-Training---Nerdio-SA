@@ -14,6 +14,8 @@ Contents:
 
         -Windows - create scheduled task, Win11 optimizations
 
+        -Storage - Azure files manual join to ADDS
+
     Files:
         Azure Runbook Stub.ps1 - stub file for baseline to create new Azure Runbook script files
 
