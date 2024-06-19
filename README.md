@@ -21,3 +21,7 @@ Contents:
 
         Windwos Script stub.ps1 - stub file for baseline to create new Windows script files
 
+        Camp slide deck - PDF version of deck used in the camp
+
+        Lab guides (qty 2.) - Comprehensive instructions to replicate camp labs
+
