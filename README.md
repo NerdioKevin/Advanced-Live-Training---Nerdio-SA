@@ -23,5 +23,5 @@ Contents:
 
         Camp slide deck - PDF version of deck used in the camp
 
-        Lab guides (qty 2.) - Comprehensive instructions to replicate camp labs
+        Lab guides (qty 4) - Comprehensive instructions to replicate camp labs
 
