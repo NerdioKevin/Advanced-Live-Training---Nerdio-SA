@@ -14,11 +14,14 @@ $VHDCompactDisk = 1        # Compacts the VHD disk during sign out to decrease t
 $ErrorActionPreference = 'Stop'
 
 # FSLogix App settings
+Write-Output "Setting CleanupInvalidSessions"
 Set-ItemProperty -Path HKLM:\Software\FSLogix\Apps -Name "CleanupInvalidSessions" -Type Dword -Value $CleanupInvalidSessions
 # In cases where a user's session terminates abruptly, the VHD(x) mounted for the user's profile isn't properly detached and the user's next sign in may not successfully attach their VHD(x) container. Enable this setting and FSLogix attempts to clean up these invalid sessions and allow a successful sign-in. This setting affects both Profile and ODFC containers
 
+Write-Output "Setting RoamRecycleBin"
 Set-ItemProperty -Path HKLM:\Software\FSLogix\Apps -Name "RoamRecycleBin" -Type Dword -Value $RoamRecycleBin
 # When enabled, this setting creates a redirection for the user's specific Recycle Bin into the VHD(x) container. This allows the user to restore items regardless of the machine from where they were deleted.
 
+Write-Output "Setting VHDCompactDisk"
 Set-ItemProperty -Path HKLM:\Software\FSLogix\Apps -Name "VHDCompactDisk" -Type Dword -Value $VHDCompactDisk
 # When enabled, this setting attempts to compact the VHD disk during the sign out operation and is designed to automatically decrease the Size On Disk of the user's container depending on a predefined threshold
