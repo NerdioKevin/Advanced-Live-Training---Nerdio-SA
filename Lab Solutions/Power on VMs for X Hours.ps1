@@ -30,9 +30,6 @@ and Target OS Disk Type as parameters at runtime.
 }
 #>
 
-# Ensure correct subscription context is selected
-Set-AzContext -SubscriptionId $AzureSubscriptionID
-
 $ErrorActionPreference = 'Stop'
 
 # Get hostpool resource group
