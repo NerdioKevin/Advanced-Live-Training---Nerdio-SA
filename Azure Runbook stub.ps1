@@ -20,6 +20,17 @@
 
 $ErrorActionPreference = 'Stop'
 
-# Your script here
+
+# Retrieve Host Pool session hosts
+
+
+# Parse VM names from session host names
+
+
+# Set WAP_SCALE_IN_RESTRICTION tag on each VM to future datetime based on Hours parameter (See lab guide for hint)
+
+
+# Start VMs 
+
 
 
